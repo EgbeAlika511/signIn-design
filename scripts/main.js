@@ -3,14 +3,13 @@ let displayCounterInput = document.querySelector('.display-counter');
 
 
 let counter = 60;
-setInterval (function (){
+setInterval (() => {
     if (counter > 0){
         displayCounterInput.value = counter;
         counter -= 5;
         switch (true) {
             case counter % 2 === 0 && !counter % 5 === 0:
                 container.style.backgroundColor = "yellow";
-                container.style.color = "black";
                 break;
             case counter % 5 === 0 && counter > 10:
                 container.style.backgroundColor = "green";
